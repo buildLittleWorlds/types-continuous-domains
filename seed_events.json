@@ -1,0 +1,576 @@
+[
+  {
+    "event_id": "EV-820-001",
+    "type": "personnel_change",
+    "date": "820-06-15",
+    "location": "capital",
+    "actors": ["arren_mott"],
+    "parent": null,
+    "depth": 0,
+    "details": {
+      "change_type": "birth",
+      "note": "Born in the Capital, 40 years after Brennis Mund began his typing discipline"
+    },
+    "triggers_cascade": false,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Arren Mott is born in Year 820. He will grow up in an era where typed passages have become the standard, but where scholars increasingly feel the loss of general recursion."
+  },
+  {
+    "event_id": "EV-845-002",
+    "type": "personnel_change",
+    "date": "845-09-01",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-845-001",
+    "depth": 0,
+    "details": {
+      "change_type": "appointment",
+      "role": "junior_logician",
+      "institution": "capital_archives",
+      "supervisor": "brennis_mund",
+      "age_at_appointment": 25
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Arren Mott joins the Archives as a junior logician, assigned to work under the newly-promoted Brennis Mund. He arrives the same year Brennis becomes Senior Archivist (EV-845-001)."
+  },
+  {
+    "event_id": "EV-848-001",
+    "type": "anomaly_observed",
+    "date": "848-03-20",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-838-001",
+    "depth": 0,
+    "details": {
+      "phenomenon": "recursion_limitation",
+      "observation": "Primitive recursor cannot express Ackermann's function",
+      "context": "While cataloguing recursive definitions, Mott finds functions that grow faster than any primitive recursive function",
+      "implication": "Brennis's primitive recursion is fundamentally limited"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott discovers that Brennis's primitive recursor cannot express all computable functions. There exist functions — like Ackermann's — that grow too fast. This is the first crack in the typed passage program."
+  },
+  {
+    "event_id": "EV-850-002",
+    "type": "investigation_launched",
+    "date": "850-11-15",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-850-001",
+    "depth": 0,
+    "details": {
+      "investigation_type": "recursion_recovery",
+      "target": "general_recursion_in_typed_context",
+      "motivation": "Brennis's final synthesis acknowledges the problem but offers no solution",
+      "approach": "Seek meaning for recursive definitions without requiring termination"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "After reading Brennis's magnum opus 'The Typed Passage Discipline', Mott begins his own investigation. If types prevent recursion by preventing self-application, perhaps there is another way to GIVE MEANING to recursive definitions."
+  },
+  {
+    "event_id": "EV-855-001",
+    "type": "discovery",
+    "date": "855-02-10",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-850-002",
+    "depth": 0,
+    "details": {
+      "discovery_type": "partial_information_insight",
+      "observation": "Non-terminating computations still produce partial information",
+      "example": "A function that loops forever on some inputs may still return correct values on others",
+      "key_insight": "Focus on WHAT a passage computes, not WHETHER it terminates"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott's breakthrough insight: even non-terminating computations produce partial information. The factorial function, defined recursively, gives correct answers for 0, 1, 2, 3... even if we can't prove it terminates on all inputs."
+  },
+  {
+    "event_id": "EV-857-001",
+    "type": "theory_proposed",
+    "date": "857-06-01",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-855-001",
+    "depth": 0,
+    "details": {
+      "theory_name": "partial_order_of_information",
+      "claim": "Computational values can be ordered by how much information they contain",
+      "key_concept": "bottom_element",
+      "bottom_meaning": "The value with no information — undefined, non-terminating",
+      "notation": "⊥ (bottom)"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott proposes that computational values form a partial order. At the bottom is ⊥ (bottom) — the undefined value, representing non-termination. Above it are defined values with actual information."
+  },
+  {
+    "event_id": "EV-858-002",
+    "type": "manuscript_written",
+    "date": "858-03-15",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-857-001",
+    "depth": 0,
+    "details": {
+      "title": "On the Ordering of Partial Information",
+      "pages": 78,
+      "chapters": 5,
+      "key_claim": "Non-termination is not failure but absence of information",
+      "dedication": "To Brennis Mund, who showed us the danger but not the deeper structure",
+      "archive_catalog": "MOT-001"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott's first manuscript, written while Brennis is still alive (he retires this year, EV-858-001). The dedication is respectful but hints at Mott's belief that there is a deeper structure Brennis missed."
+  },
+  {
+    "event_id": "EV-862-002",
+    "type": "theory_proposed",
+    "date": "862-08-01",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-858-002",
+    "depth": 0,
+    "details": {
+      "theory_name": "directed_completeness",
+      "claim": "Every increasing chain of approximations has a limit",
+      "key_concept": "directed_complete_partial_order",
+      "abbreviation": "dcpo",
+      "significance": "This ensures fixed points exist"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Five months after Brennis's death (EV-862-001), Mott proposes the dcpo structure. If we have a chain ⊥ ⊑ x₁ ⊑ x₂ ⊑ ..., there must be a limit. This is crucial for defining recursive functions."
+  },
+  {
+    "event_id": "EV-865-001",
+    "type": "discovery",
+    "date": "865-04-20",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-862-002",
+    "depth": 0,
+    "details": {
+      "discovery_type": "continuity_condition",
+      "concept": "scott_continuity",
+      "claim": "A function is continuous if it preserves directed limits",
+      "notation": "f(⊔D) = ⊔{f(d) | d ∈ D}",
+      "significance": "Continuous functions preserve the approximation structure"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott defines continuity for functions on domains. A continuous function maps chains to chains, preserving the limit. This is weaker than termination but strong enough to ensure fixed points exist."
+  },
+  {
+    "event_id": "EV-867-001",
+    "type": "discovery",
+    "date": "867-09-10",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-865-001",
+    "depth": 0,
+    "details": {
+      "discovery_type": "fixed_point_theorem",
+      "theorem_name": "least_fixed_point_theorem",
+      "claim": "Every continuous function on a dcpo has a least fixed point",
+      "construction": "fix(f) = ⊔{fⁿ(⊥) | n ∈ ℕ}",
+      "significance": "breakthrough"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott's central theorem: every continuous function has a least fixed point. The construction is elegant: start with ⊥, apply f repeatedly, take the limit. This is the domain-theoretic analog of the Y combinator."
+  },
+  {
+    "event_id": "EV-868-001",
+    "type": "manuscript_written",
+    "date": "868-01-15",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-867-001",
+    "depth": 0,
+    "details": {
+      "title": "The Fixed Point Theorem for Continuous Domains",
+      "pages": 156,
+      "chapters": 9,
+      "key_result": "Proof of the least fixed point theorem",
+      "implications": "Recursive definitions have canonical meanings",
+      "archive_catalog": "MOT-002"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott's second major manuscript contains the complete proof of the least fixed point theorem. This is the technical core of domain theory."
+  },
+  {
+    "event_id": "EV-870-001",
+    "type": "theory_contested",
+    "date": "870-05-01",
+    "location": "capital_archives",
+    "actors": ["mella_vorn", "terrik_gast"],
+    "parent": "EV-868-001",
+    "depth": 0,
+    "details": {
+      "contested_theory": "continuous_domains",
+      "objection_title": "On the Abandonment of Termination",
+      "key_objection": "Mott's approach abandons the safety guarantees that types were meant to provide",
+      "counter_argument": "Why solve the Omega problem only to reintroduce non-termination through the back door?",
+      "supporters": 6
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Critics argue that Mott has betrayed Brennis's program. Types were meant to PREVENT non-termination. Mott's domains ACCOMMODATE it. The debate echoes the earlier Safety vs. Expressiveness debate (EV-815-004)."
+  },
+  {
+    "event_id": "EV-872-001",
+    "type": "debate_published",
+    "date": "872-03-20",
+    "location": "capital_archives",
+    "actors": ["arren_mott", "terrik_gast"],
+    "parent": "EV-870-001",
+    "depth": 0,
+    "details": {
+      "title": "Meaning or Safety: The Domain Theory Debate",
+      "forum": "capital_philosophical_society",
+      "mott_position": "Meaning is primary — we must give semantics to recursive programs",
+      "gast_position": "Safety is primary — non-termination is the enemy",
+      "outcome": "unresolved",
+      "audience_reception": "divided_but_intrigued"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "The central debate of domain theory. Mott argues that MEANING is what matters — we need to understand what programs compute. Gast (son of Brennis's opponent Torren Gast) argues that SAFETY is paramount."
+  },
+  {
+    "event_id": "EV-875-001",
+    "type": "discovery",
+    "date": "875-07-01",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-872-001",
+    "depth": 0,
+    "details": {
+      "discovery_type": "function_space_domain",
+      "concept": "exponential_domain",
+      "claim": "If D and E are domains, then [D → E] (continuous functions from D to E) is also a domain",
+      "notation": "[D → E]",
+      "significance": "Domains are closed under function space construction"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott shows that continuous function spaces are themselves domains. This means we can have higher-order functions — functions that take and return functions — while preserving the domain structure."
+  },
+  {
+    "event_id": "EV-877-001",
+    "type": "discovery",
+    "date": "877-02-15",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-875-001",
+    "depth": 0,
+    "details": {
+      "discovery_type": "reflexive_domain",
+      "claim": "There exist non-trivial domains D where D ≅ [D → D]",
+      "significance": "breakthrough",
+      "implication": "A domain can be isomorphic to its own function space",
+      "connection": "This solves the self-application problem"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "The deepest insight of domain theory: there exist domains D where D ≅ [D → D]. This means elements of D can be both values AND functions from D to D. Self-application becomes possible without type paradox."
+  },
+  {
+    "event_id": "EV-878-001",
+    "type": "manuscript_written",
+    "date": "878-06-01",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-877-001",
+    "depth": 0,
+    "details": {
+      "title": "On Reflexive Domains and the Lambda Calculus",
+      "pages": 203,
+      "chapters": 12,
+      "key_result": "Construction of a domain where D ≅ [D → D]",
+      "implication": "The untyped lambda calculus has a model",
+      "archive_catalog": "MOT-003"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott constructs a concrete reflexive domain. This provides a mathematical model for the untyped lambda calculus. Every expression, including Omega, has a well-defined meaning — Omega denotes ⊥."
+  },
+  {
+    "event_id": "EV-880-001",
+    "type": "discovery",
+    "date": "880-11-01",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-878-001",
+    "depth": 0,
+    "details": {
+      "discovery_type": "denotational_semantics",
+      "concept": "interpretation_function",
+      "notation": "⟦M⟧ρ",
+      "reading": "The meaning of M in environment ρ",
+      "claim": "Every lambda term denotes a continuous function"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott develops denotational semantics — a systematic way to assign meanings to lambda terms. ⟦M⟧ρ gives the meaning of expression M in environment ρ. This is compositional: the meaning of a whole is determined by meanings of parts."
+  },
+  {
+    "event_id": "EV-882-001",
+    "type": "discovery",
+    "date": "882-04-20",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-880-001",
+    "depth": 0,
+    "details": {
+      "discovery_type": "adequacy_theorem",
+      "theorem_name": "computational_adequacy",
+      "claim": "If ⟦M⟧ ≠ ⊥, then M reduces to a value",
+      "converse": "If M reduces to a value, then ⟦M⟧ ≠ ⊥",
+      "significance": "Denotational and operational semantics agree"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "The adequacy theorem connects Mott's domain semantics to actual computation. If an expression has a non-bottom meaning, it actually terminates. If it terminates, its meaning is non-bottom. Theory and practice align."
+  },
+  {
+    "event_id": "EV-885-001",
+    "type": "manuscript_written",
+    "date": "885-09-01",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-882-001",
+    "depth": 0,
+    "details": {
+      "title": "Denotational Semantics for the Passage Calculi",
+      "pages": 289,
+      "chapters": 16,
+      "contents": ["Domain construction", "Interpretation functions", "Typed semantics", "Adequacy proofs", "Recursive definitions"],
+      "archive_catalog": "MOT-004"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott's comprehensive treatise on denotational semantics. Covers both typed and untyped calculi. Shows how recursive definitions get their meaning through fixed points."
+  },
+  {
+    "event_id": "EV-888-001",
+    "type": "personnel_change",
+    "date": "888-01-01",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-885-001",
+    "depth": 0,
+    "details": {
+      "change_type": "promotion",
+      "from_position": "junior_logician",
+      "to_position": "senior_semanticist",
+      "institution": "capital_archives",
+      "recognition": "For foundational contributions to denotational semantics"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "At age 68, Mott is promoted to Senior Semanticist — a new title created for him. His work has established a new sub-discipline within the passage tradition."
+  },
+  {
+    "event_id": "EV-890-001",
+    "type": "theory_proposed",
+    "date": "890-03-15",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-888-001",
+    "depth": 0,
+    "details": {
+      "theory_name": "pcf_with_fixed_points",
+      "claim": "The typed calculus extended with a fixed-point operator is well-behaved",
+      "operator": "fix : (τ → τ) → τ",
+      "semantics": "fix f = ⊔{fⁿ(⊥) | n ∈ ℕ}",
+      "significance": "Reconciles types with recursion"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott proposes PCF (Programming Computable Functions) — a typed calculus with an explicit fixed-point operator. This gives the best of both worlds: types for structure, fixed points for recursion."
+  },
+  {
+    "event_id": "EV-893-001",
+    "type": "manuscript_written",
+    "date": "893-08-01",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-890-001",
+    "depth": 0,
+    "details": {
+      "title": "The Continuous Domain Discipline: A Final Synthesis",
+      "pages": 412,
+      "chapters": 24,
+      "contents": ["Partial orders", "Domains and dcpos", "Continuity", "Fixed points", "Reflexive domains", "Denotational semantics", "PCF", "Philosophical reflections"],
+      "dedication": "To Kelleth, who gave us passages; to Brennis, who gave them boundaries; and to those who come after, who will give them wings",
+      "archive_catalog": "MOT-005"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott's magnum opus, paralleling Brennis's 'The Typed Passage Discipline'. A complete treatment of domain theory and its applications to programming language semantics. The dedication spans three generations of the passage tradition."
+  },
+  {
+    "event_id": "EV-897-001",
+    "type": "personnel_change",
+    "date": "897-12-31",
+    "location": "capital_archives",
+    "actors": ["arren_mott"],
+    "parent": "EV-893-001",
+    "depth": 0,
+    "details": {
+      "change_type": "retirement",
+      "from_position": "senior_semanticist",
+      "years_of_service": 52,
+      "reason": "age_and_declining_health",
+      "final_lecture": "On the Meaning of Meaning"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott retires at age 77 after 52 years at the Archives. His final lecture, 'On the Meaning of Meaning', argues that domain theory answers a question Brennis never asked: not whether passages terminate, but what they denote."
+  },
+  {
+    "event_id": "EV-901-001",
+    "type": "death",
+    "date": "901-02-20",
+    "location": "capital",
+    "actors": ["arren_mott"],
+    "parent": "EV-897-001",
+    "depth": 0,
+    "details": {
+      "death_type": "natural",
+      "age": 81,
+      "cause": "age",
+      "legacy": "founder_of_domain_theory",
+      "epitaph": "He gave passages their meanings"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Arren Mott dies at 81. His epitaph — 'He gave passages their meanings' — parallels Brennis's 'He gave passages their boundaries'. Where Brennis asked 'does it terminate?', Mott asked 'what does it mean?'"
+  },
+  {
+    "event_id": "EV-902-001",
+    "type": "archive_accession",
+    "date": "902-06-01",
+    "location": "capital_archives",
+    "actors": ["archive_committee"],
+    "parent": "EV-901-001",
+    "depth": 0,
+    "details": {
+      "collection": "arren_mott_papers",
+      "items": 478,
+      "includes": ["manuscripts", "working_notes", "domain_diagrams", "correspondence"],
+      "catalog_prefix": "MOT",
+      "special_collection": "denotational_semantics_archive"
+    },
+    "triggers_cascade": true,
+    "source": {
+      "type": "course",
+      "reference": "types-series/04-continuous-domains"
+    },
+    "confidence": 1.0,
+    "notes": "Mott's papers are accessioned to the Archive under prefix MOT. Together with the Mund Archive (MND), they form the foundation of passage theory — syntax and semantics, boundaries and meanings."
+  }
+]
