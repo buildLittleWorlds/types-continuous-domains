@@ -2,6 +2,8 @@
 
 *Domain Theory and Fixed-Point Semantics through Arren Mott's Continuous Domain Discipline*
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/buildLittleWorlds/types-continuous-domains/blob/main/notebooks/01-the-recursion-problem.ipynb)
+
 > "He gave passages their meanings" — Arren Mott's epitaph
 
 ## Course Overview
